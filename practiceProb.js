@@ -6,11 +6,11 @@ Steps:
 1. Define a function that accepts a string as a parameter
 2. Split the string that is passed in, turn it into an array of each individual word, and store it
 in a variable.
-3. Define a variable called longestWord and set the inital value to 0
-4. Define a variable called word and set the inital value to 0
-5. Start looping through the array of letters 
-6. Count how many letters are in each index(word)
-7. Return (print out) the longest word 
+3. Define a variable called longestWord and set it to the first index in the array of words.
+4. Create a for loop that iterates through the array of words.
+5. Create an if condition that compares the length of the current word with the length of the first index in the array of words. 
+6. Return (print out) the longest word 
+7. Call the function with the word string as the parameter.
 */
 
 var stringOfWords = "Hello, my name is Taylor";
