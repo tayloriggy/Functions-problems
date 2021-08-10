@@ -14,12 +14,6 @@ Steps:
 7. For each time an occurence of "i" happens, add 1 to countOfI.
 8. Return the number of occurences of the letter "i".
 9. Call the function occurencesOfLetter(stringOfWords) to get the output.
-
-
-
-
-
-
 */
 
 var stringOfWords = "Italy is known for its Italian cuisine of pizza";
