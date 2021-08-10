@@ -15,9 +15,9 @@ Hint: use the "split", the Array#includes method, and a "for" loop or "forEach" 
 
 var stringOfWords = "Follow the yellow brick road";
 
-function findNumberOfVowels (stringOfWords) {
+function findNumberOfVowels (str) {
     var vowels = ["a", "e", "i", "o", "u"];
-    var arrayOfLetters = stringOfWords.split("");
+    var arrayOfLetters = str.split("");
     var numberOfVowels = 0;
     for (var i = 0; i < arrayOfLetters.length; i++) {
         if(vowels.includes(arrayOfLetters[i].toLowerCase())) {

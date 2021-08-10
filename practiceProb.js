@@ -15,8 +15,8 @@ in a variable.
 
 var stringOfWords = "Hello my name is Taylor";
 
-function findLongestWord(stringOfWords) {
-    var arrayOfWords = stringOfWords.split(" ");
+function findLongestWord(str) {
+    var arrayOfWords = str.split(" ");
     var longestWord = arrayOfWords[0];
     for (var i = 0; i < arrayOfWords.length; i++) {
         if (arrayOfWords[i].length > longestWord.length) {
