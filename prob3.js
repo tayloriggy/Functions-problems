@@ -18,17 +18,16 @@ Steps:
 
 var stringOfWords = "Italy is known for its Italian cuisine of pizza";
 
-function occurencesOfLetter(stringOfWords, letter) {
-    var arrayOfLetters = stringOfWords.split("");
-    var letter = "i";
-    var countOfI = 0;
+function occurencesOfLetter(str, letter) {
+    var arrayOfLetters = str.split("");
+    var letterCount = 0;
     for(var x = 0; x < arrayOfLetters.length; x++){
-        if(arrayOfLetters[x].toLowerCase() === letter) {
-            countOfI += 1;
+        if(arrayOfLetters[x].toLowerCase() === letter.toLowerCase()) {
+            letterCount += 1;
         }
     }
 
-    return countOfI;
+    return letterCount;
 }
 
 occurencesOfLetter(stringOfWords);
