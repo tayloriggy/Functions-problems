@@ -17,11 +17,10 @@ var stringOfWords = "Follow the yellow brick road";
 
 function findNumberOfVowels (stringOfWords) {
     var vowels = ["a", "e", "i", "o", "u"];
-    stringOfWords.toLowerCase();
     var arrayOfLetters = stringOfWords.split("");
     var numberOfVowels = 0;
     for (var i = 0; i < arrayOfLetters.length; i++) {
-        if(vowels.includes(arrayOfLetters[i])) {
+        if(vowels.includes(arrayOfLetters[i].toLowerCase())) {
             numberOfVowels += 1;
         }
     }
