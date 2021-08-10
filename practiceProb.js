@@ -13,7 +13,7 @@ in a variable.
 7. Call the function with the word string as the parameter.
 */
 
-var stringOfWords = "Hello, my name is Taylor";
+var stringOfWords = "Hello my name is Taylor";
 
 function findLongestWord(stringOfWords) {
     var arrayOfWords = stringOfWords.split(" ");

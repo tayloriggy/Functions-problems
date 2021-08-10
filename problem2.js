@@ -16,14 +16,17 @@ Hint: use the "split", the Array#includes method, and a "for" loop or "forEach" 
 var stringOfWords = "Follow the yellow brick road";
 
 function findNumberOfVowels (stringOfWords) {
-    var vowels = ["a, e, i, o, u"];
+    var vowels = ["a", "e", "i", "o", "u"];
+    stringOfWords.toLowerCase();
     var arrayOfLetters = stringOfWords.split("");
     var numberOfVowels = 0;
     for (var i = 0; i < arrayOfLetters.length; i++) {
-        if (arrayOfLetters[i].includes(vowels)) {
-            return numberOfVowels;
+        if(vowels.includes(arrayOfLetters[i])) {
+            numberOfVowels += 1;
         }
     }
+
+    return numberOfVowels;
 }
 
 findNumberOfVowels(stringOfWords);
