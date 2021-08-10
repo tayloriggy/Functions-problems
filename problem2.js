@@ -2,15 +2,15 @@
 Hint: use the "split", the Array#includes method, and a "for" loop or "forEach" loop.
 1. Define a function that accepts a string as a parameter
 2. Define a variable and set it equal to a string of words.
-3. Define a variable named vowels and set it equal to "a, e, i, o ,u"
-4. Use the split method on the string of words to break it into an array of substrings of individual letters.
-5. Use a for loop to go through each letter (beginning at index 0) and check to see if it is a vowel or not.
-6. Use an if conditional to check if each letter is a vowel or not.
-7. Define a variable named numberOfVowels and set the initial value to 0.
-8. If a letter is a vowel, begin counting at numerical 1.
-9. Each additional letter that is a vowel will add 1 to the previous count.
-10. Once the end of the array is reached, the total number of vowels will be returned.
-11. Or use the includes() method. Would read stringOfWords.includes("a, e, i, o, u", 0)
+3. Define a variable named vowels and set it equal to the letters of a, e, i, o , and u.
+4. Pass stringOfWords through the toLowerCase method to convert all letters to lower case, in case some vowels are upper case. 
+5. Use the split method on the string of words to break it into an array of substrings of individual letters.
+6. Use a for loop to go through each letter (beginning at index 0) and check to see if it is a vowel or not.
+7. Use an if conditional to check if each letter is a vowel or not.
+8. Define a variable named numberOfVowels and set the initial value to 0.
+9. If a letter is a vowel, add 1 to the value of numberOfVowels. 
+10. Each additional letter that is a vowel will add 1 to the previous count.
+11. Once the end of the array is reached, the total number of vowels will be returned.
 */
 
 var stringOfWords = "Follow the yellow brick road";
