@@ -2,10 +2,12 @@
 A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
 Steps:
 1. Define a function called checkPalindrome and pass a string as a parameter.
-2. Define a variable called len and set it equal to the length of the string passed in. 
-3. Change the string characters passed to lower case and remove all non-alphanumeric characters.
-4. Use the replace method to replace all non-alphanumeric characters with alphanumeric characters.
-5. Check to see if each string character reads the same going forward as they do going backwards. Do this by splitting the string in half.
+2. Use the split method on the passed string to turn it into an array of individual letters, and store it in a variable.
+3. Reverse the order of that array so the letters now read backwards and store it in a variable.
+4. Compare the original array (letters reading forward) with the reversed array (letters reading backward).
+5. Convert the reversed array back into a string.
+6. If the original string and reversed string are equal, then the string that was passed in is a palindrome (returns true).
+7. If they are not equal, the string is not a palindrome (returns false).
 
 
 
@@ -13,12 +15,10 @@ Steps:
 */
 
 function checkPalindrome (str) {
-    var len = str.length;
-    for(var i = 0; i < len / 2; i++) {
-        if(str[i].toLowerCase().replace(/[^a-zA-Z0-9]+/g, "") !== str[len - 1 - i].toLowerCase().replace(/[^a-zA-Z0-9]+/g, "")) {
-            return "It is not a palindrome.";
-        }
-    }
-
-    return "It is a palindrome.";
+    var arrayOfLetters = str.split("");
+    var reversedArrayOfLetters = arrayOfLetters.reverse();
+    var reversedString = reversedArrayOfLetters.join("");
+    return str === reversedString;
 }
+
+checkPalindrome("racecar");
