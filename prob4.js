@@ -5,10 +5,8 @@ Steps:
 2. Define a variable called len and set it equal to the length of the string passed in. 
 3. Change the string characters passed to lower case and remove all non-alphanumeric characters.
 4. Use the replace method to replace all non-alphanumeric characters with alphanumeric characters.
-5. Check to see if each character (arrayOfStrings[i]) reads the same going forward as they do going backwards.
-6. Reverse the string and if it is equal to the forward string passed then return true (it is a palindrome). If it is not equal, then return false
-(not a palindrome).
-7. Use a for loop
+5. Check to see if each string character reads the same going forward as they do going backwards. Do this by splitting the string in half.
+
 
 
 
