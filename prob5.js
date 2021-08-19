@@ -9,7 +9,26 @@ Steps:
 3. If the integer is a multiple of both 3 and 5, then print "FizzBuzz".
 4. That's it!
 
+//Alternate solution w/ a function incorporated
 
+function isFizzOrBuzz(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
+      console.log("FizzBuzz " + i);
+   }
+  
+   else if (num % 3 === 0) {
+      console.log("Fizz " + i);
+   }
+   else if (num % 5 === 0) {
+      console.log("Buzz " + i);
+   }
+}
+    
+
+
+for (var i = 0; i < 101; i++){
+  isFizzOrBuzz(i);
+}
 
 
 
